@@ -1,1 +1,3 @@
 # SapiSales
+Oniga Kriszta
+Informatika
