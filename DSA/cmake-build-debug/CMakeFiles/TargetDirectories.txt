@@ -1,0 +1,3 @@
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
