@@ -6,7 +6,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30924c88-e85c-4142-a693-4f486498beaa" name="Changes" comment="" />
+    <list default="true" id="30924c88-e85c-4142-a693-4f486498beaa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/headers/manager/lab2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/headers/manager/lab_manager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/headers/models/product.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/headers/models/user.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/src/manager/lab2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/src/manager/lab_manager.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/src/models/product.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/sapi_sales/src/models/user.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/shared/headers/errors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/shared/headers/messages.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/shared/headers/useful.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/shared/src/errors.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSA/shared/src/messages.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/DSA.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/DSA.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/DSA.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/sapi_sales/src/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +48,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25VZCi5dr1f86yFgAQtKsM8Po88" />
   <component name="ProjectViewState">
@@ -41,7 +75,12 @@
       <option name="presentableId" value="Default" />
       <updated>1645614092053</updated>
       <workItem from="1645614094222" duration="76000" />
+      <workItem from="1645877422210" duration="1000" />
+      <workItem from="1645877452702" duration="137000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

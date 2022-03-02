@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -42,6 +45,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -74,7 +80,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/main.c">
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab2.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab_manager.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models/product.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models/user.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/main.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab2.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab_manager.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/product.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers/errors.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers/messages.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers/useful.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/src/errors.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/src/messages.c">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/CMakeLists.txt">
