@@ -2,6 +2,7 @@
 // Created by Kriszta Oniga on 2/23/2022.
 //
 #include "lab2.h"
+#include "useful.h"
 //fuggvenyek definicioja
 void testUserFunctionalities(){
     User *user1, *user2, *user3;
@@ -29,15 +30,15 @@ void testProductFunctionalities(){
     createProduct(&product2);
     createProduct(&product3);
 
-    setProductData(product1,"MS1", "Apple", FRUIT, 10);
-    setProductData(product2,"MS2", "Book", SCHOOL, 4);
-    setProductData(product3,"MS3", "Tomato", GROCERY, 20);
+    setProductData(product1,"MS1", "Apple", FRUIT, 10, 5);
+    setProductData(product2,"MS2", "Book", SCHOOL, 4,4);
+    setProductData(product3,"MS3", "Tomato", GROCERY, 20,3);
 
     printProduct(product1, CON);
     printProduct(product2, CON);
     printProduct(product3, CON);
 
-    deleteProduct(product1);
-    deleteProduct(product2);
-    deleteProduct(product3);
+    deleteProduct(&product1);
+    deleteProduct(&product2);
+    deleteProduct(&product3);
 }
