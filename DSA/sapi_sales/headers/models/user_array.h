@@ -18,5 +18,6 @@ void deleteUserArray(UserArray **userArray);
 bool addNewUser(UserArray* userArray, User* newUser);
 User* getUserAtPosition(UserArray* userArray, int position);
 void printUserArray(UserArray *userArray, char *destination);
+int searchById(UserArray *userArray, int userid);
 
 #endif //MAIN_C_USER_ARRAY_H

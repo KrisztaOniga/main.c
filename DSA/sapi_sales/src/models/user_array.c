@@ -49,6 +49,10 @@ void printUserArray(UserArray *userArray, char *destination ){
             printUser(userArray -> Users[i], "CON");
     }
     freopen("CON", "w", stdout);
-
+}
+int searchById(UserArray *userArray, int userid) {
+    for( int i = 0; i < numberOfUsers; ++i)
+        if(userArray -> Users[i] -> id == userid)
+            return i;
 }
 
