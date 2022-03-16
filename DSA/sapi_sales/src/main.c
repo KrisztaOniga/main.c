@@ -6,6 +6,7 @@
 #include "product.h"
 
 int main() {
-    lab2();
+    //lab2();
+    lab3();
     return 0;
 }

@@ -9,15 +9,31 @@ void printDescriptionMessage(enum LabType messageType){
         case LAB2:
             printf("~~~~~~~~~~");
             printf("Labor 2 feladatok");
-            printf("~~~~~~~~~~");
+            printf("~~~~~~~~~~\n");
             break;
         case LAB3:
             printf("~~~~~~~~~~");
             printf("Labor 3 feladatok");
-            printf("~~~~~~~~~~");
+            printf("~~~~~~~~~~\n");
             break;
         default: {
             printf("\nUndefined description\n");
+            break;
+        }
+    }
+}
+void printDeletedMessage(enum DelMess DeletedMessage){
+    switch (DeletedMessage) {
+        case PRODUCT: {
+            printf("!!!!!");
+            printf("Product deleted");
+            printf("!!!!!\n");
+            break;
+        }
+        case USER: {
+            printf("!!!!!");
+            printf("User deleted");
+            printf("!!!!!\n");
             break;
         }
     }

@@ -8,4 +8,9 @@ void lab2(){
     testUserFunctionalities();
     testProductFunctionalities();
 }
+void lab3(){
+    printDescriptionMessage(LAB3);
+    testUserArray();
+    testProductArray();
+}
 

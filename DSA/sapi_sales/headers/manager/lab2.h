@@ -6,6 +6,7 @@
 
 #include "user.h"
 #include "product.h"
+
 //2.laborhoz kapcsolodo fuggvenyek deklaracioja
 
 void testUserFunctionalities();

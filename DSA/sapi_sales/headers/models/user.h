@@ -35,15 +35,15 @@ typedef struct {
     int year;
     int month;
     int day;
-}DATE;
+}BirthDate;
 
 typedef struct {
     unsigned int id;
-    char name[50];
+    char *name;
     enum UserType type;
     enum Gender gender;
     enum Specialization specialization;
-    DATE date;
+    BirthDate birthDate;
 }User;
 
 char* getUserType(enum UserType type);
@@ -52,8 +52,9 @@ char* getSpecialization(enum Specialization type);
 
 void createUser(User** user);
 
-void setUserData(User* user, char* name, enum UserType type, enum Gender gender, enum Specialization specialization, int year, int month, int day );
-void printUser(User* user, char*);
+void setUserData(User *user, char *name, enum UserType type, enum Gender gender, enum Specialization specialization,int birthYear,
+        int birtMonth, int birthDay);
+void printUser(User* user, char* destination);
 
 void deleteUser(User** user);
 

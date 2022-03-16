@@ -10,9 +10,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/main.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab2.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/manager/lab2.c.obj"
+  "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab3.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab_manager.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/manager/lab_manager.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/product.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/models/product.c.obj"
+  "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/product_array.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/models/product_array.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/models/user.c.obj"
+  "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user_array.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/models/user_array.c.obj"
+  "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/stack/product_stack.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/stack/product_stack.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/src/errors.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/shared/src/errors.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/src/messages.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/shared/src/messages.c.obj"
   )
@@ -23,6 +27,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../sapi_sales/headers/manager"
   "../sapi_sales/headers/models"
   "../shared/headers"
+  "../sapi_sales/headers/stack"
   )
 
 # The set of dependency files which are needed:

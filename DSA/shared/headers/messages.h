@@ -11,9 +11,13 @@
 enum LabType {
     LAB2,
     LAB3,
-    LAB4,
+};
+enum DelMess {
+    USER,
+    PRODUCT,
 };
 
 void printDescriptionMessage(enum LabType);
+void printDeletedMessage(enum DelMess);
 
 #endif //DSA_MESSAGES_H
