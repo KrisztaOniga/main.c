@@ -51,7 +51,7 @@ void printUserArray(UserArray *userArray, char *destination ){
     freopen("CON", "w", stdout);
 }
 int searchById(UserArray *userArray, int userid) {
-    for( int i = 0; i < numberOfUsers; ++i)
+    for( int i = 0; i < userArray->Capacity; ++i)
         if(userArray -> Users[i] -> id == userid)
             return i;
 }
