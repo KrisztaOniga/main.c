@@ -23,5 +23,6 @@ void printErrorMessage(enum ErrorType errorType) {
             break;
         }
     }
+    exit(-1);
 }
 

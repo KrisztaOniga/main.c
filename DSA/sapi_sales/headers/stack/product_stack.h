@@ -9,18 +9,24 @@
 #include "product_array.h"
 #include "product.h"
 
-typedef struct{
+typedef struct {
     unsigned int capacity;
     int top;
     Product **Products;
-}ProductStack;
+} ProductStack;
 
-void  createProductStack(ProductStack **productStack, unsigned int capacity);
+void createProductStack(ProductStack **productStack, unsigned int capacity);
+
 void push(ProductStack *productStack, Product *product);
-int pop(ProductStack *productStack);
-int top(ProductStack *productStack);
+
+void pop(ProductStack *productStack);
+
+Product *top(ProductStack *productStack);
+
 bool stackIsEmpty(ProductStack *productStack);
+
 bool stackIsFull(ProductStack *productStack);
+
 void deleteProductStack(ProductStack **productStack);
 
 #endif //MAIN_C_PRODUCT_STACK_H

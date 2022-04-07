@@ -11,6 +11,14 @@ void lab2(){
 void lab3(){
     printDescriptionMessage(LAB3);
     testUserArray();
-    testProductArray();
+    //testProductArray();
+}
+void lab5(){
+    printDescriptionMessage(LAB5);
+    testProductStackFunctionalities();
+}
+void lab8(){
+    printDescriptionMessage(LAB8);
+    testUserQueueFunctionalities();
 }
 

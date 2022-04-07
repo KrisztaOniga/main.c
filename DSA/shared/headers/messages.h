@@ -11,10 +11,18 @@
 enum LabType {
     LAB2,
     LAB3,
+    LAB4,
+    LAB5,
+    LAB6,
+    LAB8,
 };
 enum DelMess {
     USER,
     PRODUCT,
+    USER_ARRAY,
+    PRODUCT_ARRAY,
+    PRODUCT_STACK,
+    USER_QUEUE
 };
 
 void printDescriptionMessage(enum LabType);

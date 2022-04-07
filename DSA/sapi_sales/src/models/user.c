@@ -4,9 +4,11 @@
 #include "user.h"
 #include "messages.h"
 #include "errors.h"
+#include "product.h"
+
 //Fuggvenyek definicioja
 
-char* getUserType(enum UserType type){
+char* getUserType(enum UserType type) {
     switch (type) {
         case STUDENT:
             return "Student";
@@ -17,7 +19,7 @@ char* getUserType(enum UserType type){
     }
 }
 
-char* getGender(enum Gender type){
+char *getGender(enum Gender type) {
     switch (type) {
         case MALE:
             return "Male";
@@ -28,13 +30,15 @@ char* getGender(enum Gender type){
     }
 }
 
-char* getSpecialization(enum Specialization type){
-    switch(type){
-        case INFORMATICCS:
-            return "Informatics";
+char *getSpecialization(enum Specialization type) {
+    switch (type) {
+        case INFORMATICS:
+            return "Informatic";
         case COMPUTER_SCIENCE:
-            return "Computer science";
-        case AUTOMATION:
+            return "Computer scientist";
+        case DEPARTMENT_OF_MATHEMATICS_AND_INFORMATICS:
+            return "Department of mathematics and informatics";
+        case AUTOMATION :
             return "Automation";
         case TELECOMMUNICATION:
             return "Telecommunication";
@@ -46,50 +50,92 @@ char* getSpecialization(enum Specialization type){
             return "Undefined";
     }
 }
-void createUser(User** user) {
-    *user = (User *) malloc(sizeof(User));
+
+void createUser(User **user) {
+    *user = (malloc(sizeof (User)));
     if(!(*user)){
         printErrorMessage(MEMORY_ALLOCATION);
     }
-    (*user)->name = (char *) (malloc(20 * sizeof(char)));
-    if (!(*user)->name) {
-        printErrorMessage(MEMORY_ALLOCATION);
-    }
-    (*user) -> id = ++numberOfUsers;
+    (*user)->id = ++numberOfUsers;
+    createProductArray(&(*user)->myProducts, MAX_PRODUCTS);
 }
-void setUserData(User *user, char *name, enum UserType type,
-        enum Gender gender, enum Specialization specialization,
-        int birthYear, int birthMonth, int birthDay) {
-    if(!user){
+
+void setUsersData(
+        User * user,
+        char *name,
+        enum UserType type,
+        enum Gender gender,
+        enum Specialization specialization,
+        BirthDate birthDate) {
+    if (!user) {
         printErrorMessage(NULL_POINTER_EXCEPTION);
     }
-    user->id = ++numberOfUsers;
     user->specialization = specialization;
-    user->birthDate.year = birthYear;
-    user->birthDate.month = birthMonth;
-    user->birthDate.day = birthDay;
+    user->birthDate = birthDate;
     user->gender = gender;
     user->type = type;
     strcpy(user->name, name);
 }
 
-void printUser(User *user, char* destination ) {
-    if(!user){
+void printUser(User *user, char *destination) {
+    if(!user) {
         printErrorMessage(NULL_POINTER_EXCEPTION);
     }
     freopen(destination, "w", stdout);
-    printf("%s details:\n"
-           "\t - ID: %i\n"
-           "\t - TYPE: %s\n"
-           "\t - GENDER: %s\n"
-           "\t - SPECIALIZATION: %s\n"
-           "\t - BIRTH DATE: %4i/%2i/%2i\n",
-           user->name, user->id, getUserType(user->type), getGender(user->gender), getSpecialization(user->specialization),
-           user-> birthDate.year, user -> birthDate.month, user -> birthDate.day);
-    freopen(CON, "w", stdout);
+    printf("\n\t%s details: "
+           "\n\t\t - ID: %i"
+           "\n\t\t - Type: %s "
+           "\n\t\t - Gender: %s"
+           "\n\t\t - Specialization: %s "
+           "\n\t\t - Birth date: %i.%i.%i \n",
+           user->name,
+           user->id,
+           getUserType(user->type),
+           getGender(user->gender),
+           getSpecialization(user->specialization),
+           user->birthDate.year, user->birthDate.month, user->birthDate.day);
+    printMyProducts(user, destination);
+    printf("\n");
+    freopen("CON", "w", stdout);
 }
 
-void deleteUser(User **user) {
-    free(*user);
-    *user = NULL;
+void deleteUser(User **user){
+    if(*user != NULL){
+        deleteProductArray(&(*user)->myProducts);
+        free(*user);
+        *user = NULL;
+        printDeletedMessage(USER);
+    }
 }
+
+
+void addNewProductToUser(User *user, Product *newProduct, int position) {
+    if(!addNewProduct(user->myProducts, newProduct, position)){
+        printErrorMessage(ADD_PRODUCT_ERROR);
+    }
+}
+
+void printMyProducts(User *user, char *destination) {
+    printf("\n\tPRODUCTS:\n\n");
+    for (int i = 0; i < user->myProducts->maxProducts; ++i) {
+        if(user->myProducts->products[i] != NULL)
+            printProduct(user->myProducts->products[i], destination);
+    }
+}
+
+void readUserProducts(User *user){
+    int nrOfProducts;
+    scanf("%i\n", &nrOfProducts);
+    for (int i = 0; i < nrOfProducts; ++i) {
+        Product  *newProduct;
+        createProduct(&newProduct);
+        scanf("%[^\n]"
+              "%i"
+              "%i\n",
+              newProduct->name,
+              &newProduct->type,
+              &newProduct->amount);
+        addNewProductToUser(user, newProduct, i);
+    }
+}
+

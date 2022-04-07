@@ -7,6 +7,8 @@
 
 int main() {
     //lab2();
-    lab3();
+    //lab3();
+    //lab5();
+    lab8();
     return 0;
 }

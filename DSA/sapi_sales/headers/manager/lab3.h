@@ -7,7 +7,6 @@
 
 //3.laborhoz kapcsolodo fuggvenyek deklaracioja
 
-void testProductArray();
 void testUserArray();
 
 #endif //MAIN_C_LAB3_H

@@ -4,19 +4,20 @@
 CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj: \
  ../sapi_sales/headers/manager/lab2.h \
  ../sapi_sales/headers/manager/lab3.h \
+ ../sapi_sales/headers/manager/lab5.h \
  ../sapi_sales/headers/manager/lab_manager.h \
  ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
- ../shared/headers/errors.h \
+ ../sapi_sales/headers/stack/product_stack.h \
  ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/main.c
 CMakeFiles/DSA.dir/sapi_sales/src/manager/lab2.c.obj: \
  ../sapi_sales/headers/manager/lab2.h \
  ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
- ../shared/headers/errors.h \
- ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/manager/lab2.c
 CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj: \
@@ -25,23 +26,38 @@ CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj: \
  ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
  ../sapi_sales/headers/models/user_array.h \
- ../shared/headers/errors.h \
- ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/manager/lab3.c
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab5.c.obj: \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
+ ../sapi_sales/headers/stack/product_stack.h \
+ ../shared/headers/useful.h \
+ ../sapi_sales/src/manager/lab5.c
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab8.c.obj: \
+ ../sapi_sales/headers/manager/lab8.h \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
+ ../sapi_sales/headers/models/user.h \
+ ../sapi_sales/headers/queue/user_queue.h \
+ ../shared/headers/useful.h \
+ ../sapi_sales/src/manager/lab8.c
 CMakeFiles/DSA.dir/sapi_sales/src/manager/lab_manager.c.obj: \
  ../sapi_sales/headers/manager/lab2.h \
  ../sapi_sales/headers/manager/lab3.h \
+ ../sapi_sales/headers/manager/lab5.h \
  ../sapi_sales/headers/manager/lab_manager.h \
  ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
- ../shared/headers/errors.h \
+ ../sapi_sales/headers/stack/product_stack.h \
  ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/manager/lab_manager.c
 CMakeFiles/DSA.dir/sapi_sales/src/models/product.c.obj: \
  ../sapi_sales/headers/models/product.h \
  ../shared/headers/errors.h \
+ ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/models/product.c
 CMakeFiles/DSA.dir/sapi_sales/src/models/product_array.c.obj: \
@@ -51,18 +67,31 @@ CMakeFiles/DSA.dir/sapi_sales/src/models/product_array.c.obj: \
  ../shared/headers/messages.h \
  ../sapi_sales/src/models/product_array.c
 CMakeFiles/DSA.dir/sapi_sales/src/models/user.c.obj: \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
  ../shared/headers/errors.h \
  ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/models/user.c
 CMakeFiles/DSA.dir/sapi_sales/src/models/user_array.c.obj: \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
  ../sapi_sales/headers/models/user_array.h \
  ../shared/headers/errors.h \
  ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/models/user_array.c
+CMakeFiles/DSA.dir/sapi_sales/src/queue/user_queue.c.obj: \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
+ ../sapi_sales/headers/models/user.h \
+ ../sapi_sales/headers/queue/user_queue.h \
+ ../shared/headers/errors.h \
+ ../shared/headers/messages.h \
+ ../shared/headers/useful.h \
+ ../sapi_sales/src/queue/user_queue.c
 CMakeFiles/DSA.dir/sapi_sales/src/stack/product_stack.c.obj: \
  ../sapi_sales/headers/models/product.h \
  ../sapi_sales/headers/models/product_array.h \

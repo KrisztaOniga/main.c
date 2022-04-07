@@ -7,17 +7,21 @@
 
 #include "user.h"
 #include <stdbool.h>
-typedef struct{
-    User** Users;
-    int Capacity;
-    int NumberOfUsers;
+typedef struct {
+    User** users;
+    unsigned int maxUsers;
 }UserArray;
 
-void createUserArray(UserArray **userArray, unsigned int maxUsers);
-void deleteUserArray(UserArray **userArray);
-bool addNewUser(UserArray* userArray, User* newUser);
-User* getUserAtPosition(UserArray* userArray, int position);
-void printUserArray(UserArray *userArray, char *destination);
-int searchById(UserArray *userArray, int userid);
+void createUserArray (UserArray **userArray, unsigned int maxUsers);
+
+void deleteUserArray (UserArray **userArray);
+
+bool addNewUser(UserArray *userArray, User* newUser, int position);
+
+User* getUserPosition(UserArray *userArray, int position);
+
+void readUsers(UserArray* userArray, char* from);
+
+void printUsers(UserArray* userArray, char* destination);
 
 #endif //MAIN_C_USER_ARRAY_H

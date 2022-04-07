@@ -7,45 +7,56 @@
 #include "errors.h"
 #include "messages.h"
 
+
 void createProductArray(ProductArray **productArray, unsigned int maxProducts) {
-    *productArray = (ProductArray *) malloc(1 * sizeof(ProductArray));
-    if (!(*productArray))
-        printErrorMessage(MEMORY_ALLOCATION);
-
-    (*productArray)->Products = (Product **) malloc(maxProducts * sizeof(Product *));
-    if (!(*productArray)->Products) {
+    *productArray = (ProductArray*) malloc(sizeof (ProductArray));
+    if(!(*productArray)){
         printErrorMessage(MEMORY_ALLOCATION);
     }
-    (*productArray)->Capacity = maxProducts;
-    (*productArray)->NumberOfProducts = 0;
+    (*productArray)->maxProducts = maxProducts;
+    (*productArray)->products = (Product**) malloc(maxProducts*sizeof(Product*));
+    if(!(*productArray)->products){
+        printErrorMessage(MEMORY_ALLOCATION);
+    }
+    for (int i = 0; i < (*productArray)->maxProducts; ++i) {
+        (*productArray)->products[i] = NULL;
+    }
 }
-void deleteProductArray(ProductArray **productArray){
+
+void deleteProductArray(ProductArray **productArray) {
     if(*productArray != NULL){
-        for( int i = 0; i < (*productArray) -> Capacity; ++i){
-            deleteProduct(&(*productArray) -> Products[i]);
+        for (int i = 0; i < (*productArray)->maxProducts; ++i) {
+            deleteProduct(&(*productArray)->products[i]);
         }
+        (*productArray)->maxProducts = 0;
+        free((*productArray)->products);
+        free((*productArray));
+        *productArray = NULL;
+        printDeletedMessage(PRODUCT_ARRAY);
     }
-    (*productArray) -> Capacity = 0;
-    free((*productArray) -> Products);
-    free((*productArray));
-    *productArray = NULL;
-    printDeletedMessage(PRODUCT);
-}
-bool addNewProduct(ProductArray* productArray , Product *newProduct){
-    if(productArray -> NumberOfProducts < productArray -> Capacity){
-        productArray -> Products[productArray -> NumberOfProducts] = newProduct;
-        productArray -> NumberOfProducts ++;
-        return true;
-    }
-    return false;
 }
 
-void printProductArray(ProductArray *productArray, char *destination){
-    freopen(destination, "w", stdout);
-    for(int i = 0; i < (*productArray).NumberOfProducts; ++i){
-        printProduct(productArray -> Products[i], "CON");
+bool addNewProduct(ProductArray *productArray, Product *newProduct, int position) {
+    if(!productArray || !newProduct || position < 0 || position >= productArray->maxProducts){
+        printf("Incorrect position or array is not NULL!\n");
+        return false;
     }
-    freopen("CON", "w", stdout);
+    productArray->products[position] = newProduct;
+    return true;
 }
 
+Product *getProductAtPosition(ProductArray *productArray, int position) {
+    if(!productArray || position < 0 || position >= productArray->maxProducts){
+        printf("Incorrect position or array is not NULL!\n");
+        return NULL;
+    }
+    return productArray->products[position];
+}
 
+int findElementInArray(ProductArray *productArray, int productId) {
+    for (int i = 0; i < productArray->maxProducts; ++i) {
+        if(productArray->products[i]->id == productId)
+            return i;
+    }
+    return -1;
+}

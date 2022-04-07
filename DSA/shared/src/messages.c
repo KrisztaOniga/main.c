@@ -7,14 +7,24 @@
 void printDescriptionMessage(enum LabType messageType){
     switch (messageType) {
         case LAB2:
-            printf("~~~~~~~~~~");
-            printf("Labor 2 feladatok");
-            printf("~~~~~~~~~~\n");
+            printf("**********************************************\n");
+            printf("Testing basic User and Product functionalities\n");
+            printf("**********************************************\n");
             break;
         case LAB3:
-            printf("~~~~~~~~~~");
-            printf("Labor 3 feladatok");
-            printf("~~~~~~~~~~\n");
+            printf("**************************************************\n");
+            printf("Testing UserArray and ProductArray functionalities\n");
+            printf("**************************************************\n");
+            break;
+        case LAB5:
+            printf("****************************************\n");
+            printf("Testing ProductStack functionalities\n");
+            printf("****************************************\n");
+            break;
+        case LAB8:
+            printf("*********************************\n");
+            printf("Testing UserQueue functionalities\n");
+            printf("*********************************\n");
             break;
         default: {
             printf("\nUndefined description\n");
@@ -22,7 +32,7 @@ void printDescriptionMessage(enum LabType messageType){
         }
     }
 }
-void printDeletedMessage(enum DelMess DeletedMessage){
+void printDeletedMessage(enum DelMess DeletedMessage) {
     switch (DeletedMessage) {
         case PRODUCT: {
             printf("!!!!!");
@@ -36,5 +46,32 @@ void printDeletedMessage(enum DelMess DeletedMessage){
             printf("!!!!!\n");
             break;
         }
+        case USER_ARRAY: {
+            printf("!!!!!");
+            printf("UserArray deleted");
+            printf("!!!!!\n");
+            break;
+        }
+        case PRODUCT_ARRAY: {
+            printf("!!!!!");
+            printf("ProductArray deleted");
+            printf("!!!!!\n");
+            break;
+        }
+        case PRODUCT_STACK: {
+            printf("!!!!!");
+            printf("ProductStack deleted");
+            printf("!!!!!\n");
+            break;
+        }
+        case USER_QUEUE: {
+            printf("!!!!!");
+            printf("UserQueue deleted");
+            printf("!!!!!\n");
+            break;
+        }
+        default:
+            printf("Undefined description\n");
+            break;
     }
 }

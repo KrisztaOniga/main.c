@@ -11,49 +11,70 @@ void createProductStack(ProductStack **productStack, unsigned int capacity){
     if (!(*productStack))
         printErrorMessage(MEMORY_ALLOCATION);
 
-    (*productStack) -> Products = (ProductStack **) malloc(capacity * sizeof(ProductStack *));
+    (*productStack) -> Products = malloc(capacity * sizeof(Product *));
     if (!(*productStack) -> Products) {
         printErrorMessage(MEMORY_ALLOCATION);
-    }
-    for(int i = 0; i < (*productStack) -> capacity; ++i){
-        (*productStack) -> Products[i] = (ProductStack *) malloc(capacity * sizeof(ProductStack));
     }
 
     (*productStack) -> top = -1;
     (*productStack) -> capacity = capacity;
+
+    for(int i = 0; i < (*productStack) -> capacity; ++i){
+        (*productStack) -> Products[i] = malloc(capacity * sizeof(Product));
+    }
+
+    /*
+   for(int i = 0; i < (*productStack) -> capacity; ++i){
+       (*productStack) -> Products[i] = NULL;
+   }
+   */
 }
 void push(ProductStack *productStack, Product *product){
     if(stackIsFull(productStack))
-        return;
-    productStack -> Products[++productStack -> top] = product;
+        printf("Stack is full\n");
+    else {
+        productStack -> top++;
+        productStack -> Products[productStack -> top] = product;
+    }
 }
-int pop(ProductStack *productStack){
+void pop(ProductStack *productStack) {
     if (stackIsEmpty(productStack))
-        return NULL;
-    productStack->top--;
-    return productStack->Products[productStack->top + 1];
+        printf("Stack is empty\n");
+    else {
+        //deleteProduct(&productStack->Products[productStack->top]);
+        productStack->Products[productStack->top] = NULL;
+        productStack->top--;
+    }
 }
-int top(ProductStack *productStack){
+Product *top(ProductStack *productStack){
     if (stackIsEmpty(productStack))
-        return NULL;
-    return productStack->Products[productStack -> top];
+        printf("Stack is empty\n");
+    else{
+        return productStack->Products[productStack -> top];
+    }
+    return NULL;
 }
 
 bool stackIsEmpty(ProductStack *productStack){
-    if(productStack -> top == -1)
-        return true;
-    return false;
+    if(!productStack){
+        printErrorMessage(NULL_POINTER_EXCEPTION);
+    }
+    return productStack -> top == -1;
 }
 bool stackIsFull(ProductStack *productStack){
-    if(productStack -> top == productStack -> capacity - 1)
-        return true;
-    return false;
+    if(!productStack){
+        printErrorMessage(NULL_POINTER_EXCEPTION);
+    }
+    return productStack -> top == productStack -> capacity - 1;
 }
 void deleteProductStack(ProductStack **productStack){
-    for(int i = 0; i < (*productStack) -> capacity; ++i){
-        if((*productStack) -> Products[i] != NULL)
-            free((*productStack)->Products[i]);
+    if((*productStack)){
+        for(int i = 0; i < (*productStack) -> capacity; ++i){
+            if((*productStack) -> Products[i] != NULL)
+                free((*productStack)->Products[i]);
+        }
+        free((*productStack)->Products);
+        free(*productStack);
+        printDeletedMessage(PRODUCT_STACK);
     }
-    free((*productStack)->Products);
-    free(*productStack);
 }

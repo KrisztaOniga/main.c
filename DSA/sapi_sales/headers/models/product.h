@@ -11,29 +11,33 @@
 #include <stdio.h>
 #include <time.h>
 //Termekekkel kapcsolatos fuggvenyek deklaracioja
-
-enum ProductType{
-    GROCERY,
+enum ProductType {
+    VEGETABLE,
     FRUIT,
     SCHOOL,
     OBJECT
 };
 
-typedef struct {
+typedef struct Product {
     int id;
-    char *name;
+    char name[20];
     enum ProductType type;
     unsigned int amount;
     time_t creationDate;
-    int price;
 }Product;
-
 
 char* getProductType(enum ProductType type);
 
-void createProduct(Product** product);
-void setProductData(Product *product, char *name, enum ProductType type, unsigned int amount, int price);
-void printProduct(Product* product, char* destination);
+void createProduct( Product ** product);
+
+void setProductData(
+        Product *product,
+        char name [20],
+        enum ProductType type,
+        unsigned int amount);
+
+void printProduct(Product * product, char * destination);
+
 void deleteProduct(Product **product);
 
 #endif //DSA_PRODUCT_H

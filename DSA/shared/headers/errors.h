@@ -12,6 +12,7 @@ enum ErrorType{
     MEMORY_ALLOCATION,
     FILE_NOT_FOUND,
     NULL_POINTER_EXCEPTION,
+    ADD_PRODUCT_ERROR
 };
 
 void printErrorMessage(enum ErrorType);

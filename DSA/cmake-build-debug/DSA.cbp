@@ -28,6 +28,8 @@
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/stack"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/queue"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -50,6 +52,8 @@
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/shared/headers"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/stack"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/queue"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -88,6 +92,12 @@
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab3.h">
 			<Option target="DSA"/>
 		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab5.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab8.h">
+			<Option target="DSA"/>
+		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab_manager.h">
 			<Option target="DSA"/>
 		</Unit>
@@ -103,6 +113,9 @@
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/models/user_array.h">
 			<Option target="DSA"/>
 		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/queue/user_queue.h">
+			<Option target="DSA"/>
+		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/stack/product_stack.h">
 			<Option target="DSA"/>
 		</Unit>
@@ -113,6 +126,12 @@
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab3.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab5.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab8.c">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab_manager.c">
@@ -128,6 +147,9 @@
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user_array.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/user_queue.c">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/stack/product_stack.c">

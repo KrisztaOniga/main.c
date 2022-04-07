@@ -4,47 +4,45 @@
 #include "product.h"
 #include "errors.h"
 #include "useful.h"
+#include "messages.h"
 
 //Fuggvenyek definicioja
 
+
 char* getProductType(enum ProductType type){
-    switch(type){
-        case GROCERY:
-            return "Grocery";
+    switch (type) {
+        case VEGETABLE:
+            return "Vegetable";
         case FRUIT:
             return "Fruit";
-        case  SCHOOL:
+        case SCHOOL:
             return "School";
         case OBJECT:
             return "Object";
-        default:
+        default :
             return "Undefined";
     }
 }
-void createProduct(Product ** product) {
-    *product = (Product *) malloc(sizeof(Product));
-    if (!(*product)) {
-        printErrorMessage(MEMORY_ALLOCATION);
-    }
-    (*product)->name = (char *) (malloc(20 * sizeof(char)));
-    if (!(*product)->name) {
+
+void createProduct(Product **product){
+    *product = malloc(sizeof (Product));
+    if(!(*product)){
         printErrorMessage(MEMORY_ALLOCATION);
     }
     (*product)-> id = ++numberOfProducts;
 }
 
-void setProductData(Product *product, char *name, enum ProductType type, unsigned int amount, int price){
+void setProductData(Product *product, char *name, enum ProductType type, unsigned int amount){
     if(!product){
-        printErrorMessage(NULL_POINTER_EXCEPTION);
+        printErrorMessage(MEMORY_ALLOCATION);
     }
-    strcpy(product -> name, name);
-    product -> type = type;
-    product -> amount = amount;
-    product -> price = price;
-    product -> creationDate = time(NULL);
+    strcpy(product->name, name);
+    product->type = type;
+    product->amount = amount;
+    product->creationDate = time(NULL);
 }
 
-void printProduct(Product *product, char *destination ){
+void printProduct(Product *product, char* destination){
     if(!product){
         printErrorMessage(MEMORY_ALLOCATION);
     }
@@ -61,10 +59,11 @@ void printProduct(Product *product, char *destination ){
            product->creationDate);
     freopen("CON", "w", stdout);
 }
-
-void deleteProduct(Product **product) {
-    if(product != NULL) {
+void deleteProduct(Product ** product){
+    if(*product != NULL){
         free(*product);
         *product = NULL;
+        printDeletedMessage(PRODUCT);
+
     }
 }

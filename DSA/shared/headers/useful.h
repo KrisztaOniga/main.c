@@ -12,10 +12,11 @@
 
 #define CON "CON"
 #define FILE_IN_USERS_PRODUCTS "data.txt"
+
 #define MAX_N 100000
 
 static int numberOfUsers = 0;
-static int numberOfProducts = 0;
+static long long numberOfProducts = 0;
 
 #define FILE_IN_USERS "users.txt"
 #define FILE_OUT "output.txt"

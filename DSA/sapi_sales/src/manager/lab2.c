@@ -6,27 +6,26 @@
 #include "product.h"
 //fuggvenyek definicioja
 void testUserFunctionalities() {
-    User *user1, *user2, *user3;
-
+    User *user1,*user2,*user3;
     createUser(&user1);
     createUser(&user2);
     createUser(&user3);
 
-    setUserData(user1, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, 1900 + rand() % 69 + 20, rand() % 11 + 1,
-                rand() % 30 + 1);
-    setUserData(user2, "Jane Austin", TEACHER, FEMALE, ENGINEERING, 1900 + rand() % 69 + 20, rand() % 11 + 1,
-                rand() % 30 + 1);
-    setUserData(user3, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, 1900 + rand() % 69 + 20, rand() % 11 + 1,
-                rand() % 30 + 1);
+    BirthDate date1 = {1980,2,23};
+    BirthDate date2 = {2003,10,7};
+    BirthDate date3 = {1990,3,14};
 
-    printUser(user1, CON);
-    printUser(user2, CON);
-    printUser(user3, CON);
+    setUsersData(user1, "John Peterson", STUDENT, MALE, COMPUTER_SCIENCE, date1);
+    setUsersData(user2,  "Jane Austin", TEACHER, FEMALE, ENGINEERING, date2);
+    setUsersData(user3, "Jakob Brown", STUDENT, MALE, MATHEMATICS_INFORMATICS, date3);
+
+    printUser(user1,"CON");
+    printUser(user2,"CON");
+    printUser(user3,"CON");
 
     deleteUser(&user1);
     deleteUser(&user2);
     deleteUser(&user3);
-
 }
 void testProductFunctionalities(){
 
@@ -36,9 +35,9 @@ void testProductFunctionalities(){
     createProduct(&product2);
     createProduct(&product3);
 
-    setProductData(product1, "Apple", FRUIT, 10, 5);
-    setProductData(product2, "Book", SCHOOL, 4, 4);
-    setProductData(product3,"Tomato", GROCERY, 20, 3);
+    setProductData(product1, "Apple", FRUIT, 10);
+    setProductData(product2, "Book", SCHOOL, 4);
+    setProductData(product3,"Tomato", VEGETABLE, 20);
 
     printProduct(product1, CON);
     printProduct(product2, CON);

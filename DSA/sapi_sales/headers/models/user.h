@@ -5,57 +5,72 @@
 #ifndef DSA_USER_H
 #define DSA_USER_H
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
 #include "useful.h"
-#include "errors.h"
-#include "messages.h"
-//Felhasznaloval kapcsolatos fuggvenyek deklaracioja
+#include "product.h"
+#include "product_array.h"
+
 enum UserType{
-    STUDENT,
-    TEACHER
+    TEACHER,
+    STUDENT
 };
 
-enum Gender{
-    FEMALE,
+enum Gender {
     MALE,
+    FEMALE
 };
 
-enum Specialization{
-    INFORMATICCS,
+enum Specialization {
+    INFORMATICS,
     COMPUTER_SCIENCE,
+    DEPARTMENT_OF_MATHEMATICS_AND_INFORMATICS,
     AUTOMATION,
     TELECOMMUNICATION,
     MATHEMATICS_INFORMATICS,
-    ENGINEERING,
+    ENGINEERING
 };
+
 typedef struct {
-    int year;
-    int month;
-    int day;
+    unsigned int year;
+    unsigned int month;
+    unsigned int day;
 }BirthDate;
 
 typedef struct {
     unsigned int id;
-    char *name;
+    char name[50];
+    char *pName;
     enum UserType type;
     enum Gender gender;
-    enum Specialization specialization;
     BirthDate birthDate;
+    enum Specialization specialization;
+    ProductArray *myProducts;
 }User;
 
-char* getUserType(enum UserType type);
-char* getGender(enum Gender type);
-char* getSpecialization(enum Specialization type);
+char *getUserType(enum UserType type);
 
-void createUser(User** user);
+char *getGender(enum Gender type);
 
-void setUserData(User *user, char *name, enum UserType type, enum Gender gender, enum Specialization specialization,int birthYear,
-        int birtMonth, int birthDay);
-void printUser(User* user, char* destination);
+char *getSpecialization(enum Specialization type);
 
-void deleteUser(User** user);
+void createUser( User ** user);
+
+void setUsersData(
+        User * user,
+        char *name,
+        enum UserType type,
+        enum Gender gender,
+        enum Specialization specialization,
+        BirthDate birthDate
+);
+
+void printUser(User *user, char *destination);
+
+void deleteUser(User **user);
+
+void addNewProductToUser(User *user, Product *newProduct, int position);
+
+void printMyProducts(User *user, char *destination);
+
+void readUserProducts(User* user);
 
 #endif //DSA_USER_H
