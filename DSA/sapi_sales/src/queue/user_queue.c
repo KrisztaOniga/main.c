@@ -82,7 +82,9 @@ int finElementInQueuebyUser(UserQueue * userQueue, User *user){
            strcmp((const char *) userQueue->users[i]->specialization, (const char *) user->specialization) == 0 &&
            strcmp((const char *) userQueue->users[i]->gender, user->name) == 0 &&
            strcmp((const char *) userQueue->users[i]->gender, (const char *) user->gender) == 0 &&
-           userQueue->users[i]->birthDate.day == user->birthDate.day)
+           userQueue->users[i]->birthDate.day == user->birthDate.day &&
+                userQueue->users[i]->birthDate.month == user->birthDate.month &&
+                userQueue->users[i]->birthDate.year == user->birthDate.year)
             return user->id;
         return 0;
     }
