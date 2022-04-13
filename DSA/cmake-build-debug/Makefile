@@ -128,6 +128,30 @@ DSA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/build
 .PHONY : DSA/fast
 
+sapi_sales/src/list/user_list.obj: sapi_sales/src/list/user_list.c.obj
+.PHONY : sapi_sales/src/list/user_list.obj
+
+# target to build an object file
+sapi_sales/src/list/user_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj
+.PHONY : sapi_sales/src/list/user_list.c.obj
+
+sapi_sales/src/list/user_list.i: sapi_sales/src/list/user_list.c.i
+.PHONY : sapi_sales/src/list/user_list.i
+
+# target to preprocess a source file
+sapi_sales/src/list/user_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.i
+.PHONY : sapi_sales/src/list/user_list.c.i
+
+sapi_sales/src/list/user_list.s: sapi_sales/src/list/user_list.c.s
+.PHONY : sapi_sales/src/list/user_list.s
+
+# target to generate assembly for a file
+sapi_sales/src/list/user_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.s
+.PHONY : sapi_sales/src/list/user_list.c.s
+
 sapi_sales/src/main.obj: sapi_sales/src/main.c.obj
 .PHONY : sapi_sales/src/main.obj
 
@@ -473,6 +497,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSA
+	@echo ... sapi_sales/src/list/user_list.obj
+	@echo ... sapi_sales/src/list/user_list.i
+	@echo ... sapi_sales/src/list/user_list.s
 	@echo ... sapi_sales/src/main.obj
 	@echo ... sapi_sales/src/main.i
 	@echo ... sapi_sales/src/main.s

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab2.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj"

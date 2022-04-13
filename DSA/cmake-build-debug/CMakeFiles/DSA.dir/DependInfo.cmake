@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list/user_list.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/main.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab2.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/manager/lab2.c.obj"
   "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab3.c" "C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/cmake-build-debug/CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj"
@@ -33,6 +34,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../sapi_sales/headers/stack"
   "../sapi_sales/headers/queue"
   "../sapi_sales/src/queue"
+  "../sapi_sales/headers/list"
+  "../sapi_sales/src/list"
   )
 
 # The set of dependency files which are needed:

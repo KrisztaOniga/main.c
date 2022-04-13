@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../sapi_sales/headers/list/user_list.h
+user.h
+../sapi_sales/headers/list/user.h
+
 ../sapi_sales/headers/models/product.h
 sys/utime.h
 -
@@ -32,31 +36,9 @@ product.h
 product_array.h
 ../sapi_sales/headers/models/product_array.h
 
-../sapi_sales/headers/queue/user_queue.h
-user.h
-../sapi_sales/headers/queue/user.h
-
-../shared/headers/errors.h
-stdlib.h
--
-stdio.h
--
-
-../shared/headers/messages.h
-stdlib.h
--
-stdio.h
--
-
 ../shared/headers/useful.h
 
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/user_queue.c
-user_queue.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/user_queue.h
-errors.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/errors.h
-user.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/user.h
-messages.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/queue/messages.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list/user_list.c
+user_list.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list/user_list.h
 
