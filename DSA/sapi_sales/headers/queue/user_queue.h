@@ -20,6 +20,7 @@ bool queueIsFull(UserQueue *userQueue);
 void enqueue(UserQueue* userQueue,User *user);
 void dequeue(UserQueue* userQueue);
 int findElementInQueue(UserQueue* userQueue, int userId);
+int finElementInQueuebyUser(UserQueue * userQueue, User *user);
 void printQueue(UserQueue* userQueue, char*destination);
 void deleteQueue(UserQueue** userQueue);
 

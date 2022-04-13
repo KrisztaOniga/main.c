@@ -4,6 +4,7 @@
 
 #ifndef MAIN_C_LAB8_H
 #define MAIN_C_LAB8_H
+#include "user_queue.h"
 
 void testUserQueueFunctionalities();
 

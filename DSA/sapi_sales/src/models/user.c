@@ -94,7 +94,7 @@ void printUser(User *user, char *destination) {
            getGender(user->gender),
            getSpecialization(user->specialization),
            user->birthDate.year, user->birthDate.month, user->birthDate.day);
-    printMyProducts(user, destination);
+    //printMyProducts(user, destination);
     printf("\n");
     freopen("CON", "w", stdout);
 }

@@ -6,6 +6,7 @@
 #include "product_stack.h"
 #include "messages.h"
 #include "errors.h"
+
 void createProductStack(ProductStack **productStack, unsigned int capacity){
     *productStack = (ProductStack *) malloc(1 * sizeof(ProductStack));
     if (!(*productStack))
@@ -20,14 +21,13 @@ void createProductStack(ProductStack **productStack, unsigned int capacity){
     (*productStack) -> capacity = capacity;
 
     for(int i = 0; i < (*productStack) -> capacity; ++i){
-        (*productStack) -> Products[i] = malloc(capacity * sizeof(Product));
+        (*productStack) -> Products[i] = malloc(1 * sizeof(Product));
     }
 
-    /*
+
    for(int i = 0; i < (*productStack) -> capacity; ++i){
        (*productStack) -> Products[i] = NULL;
    }
-   */
 }
 void push(ProductStack *productStack, Product *product){
     if(stackIsFull(productStack))
