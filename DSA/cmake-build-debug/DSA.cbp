@@ -105,6 +105,9 @@
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab8.h">
 			<Option target="DSA"/>
 		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab9.h">
+			<Option target="DSA"/>
+		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab_manager.h">
 			<Option target="DSA"/>
 		</Unit>
@@ -142,6 +145,9 @@
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab8.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab9.c">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab_manager.c">

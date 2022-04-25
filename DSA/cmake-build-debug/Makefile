@@ -272,6 +272,30 @@ sapi_sales/src/manager/lab8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/manager/lab8.c.s
 .PHONY : sapi_sales/src/manager/lab8.c.s
 
+sapi_sales/src/manager/lab9.obj: sapi_sales/src/manager/lab9.c.obj
+.PHONY : sapi_sales/src/manager/lab9.obj
+
+# target to build an object file
+sapi_sales/src/manager/lab9.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.obj
+.PHONY : sapi_sales/src/manager/lab9.c.obj
+
+sapi_sales/src/manager/lab9.i: sapi_sales/src/manager/lab9.c.i
+.PHONY : sapi_sales/src/manager/lab9.i
+
+# target to preprocess a source file
+sapi_sales/src/manager/lab9.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.i
+.PHONY : sapi_sales/src/manager/lab9.c.i
+
+sapi_sales/src/manager/lab9.s: sapi_sales/src/manager/lab9.c.s
+.PHONY : sapi_sales/src/manager/lab9.s
+
+# target to generate assembly for a file
+sapi_sales/src/manager/lab9.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSA.dir\build.make CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.s
+.PHONY : sapi_sales/src/manager/lab9.c.s
+
 sapi_sales/src/manager/lab_manager.obj: sapi_sales/src/manager/lab_manager.c.obj
 .PHONY : sapi_sales/src/manager/lab_manager.obj
 
@@ -515,6 +539,9 @@ help:
 	@echo ... sapi_sales/src/manager/lab8.obj
 	@echo ... sapi_sales/src/manager/lab8.i
 	@echo ... sapi_sales/src/manager/lab8.s
+	@echo ... sapi_sales/src/manager/lab9.obj
+	@echo ... sapi_sales/src/manager/lab9.i
+	@echo ... sapi_sales/src/manager/lab9.s
 	@echo ... sapi_sales/src/manager/lab_manager.obj
 	@echo ... sapi_sales/src/manager/lab_manager.i
 	@echo ... sapi_sales/src/manager/lab_manager.s

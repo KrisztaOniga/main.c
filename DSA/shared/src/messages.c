@@ -26,6 +26,11 @@ void printDescriptionMessage(enum LabType messageType){
             printf("Testing UserQueue functionalities\n");
             printf("*********************************\n");
             break;
+        case LAB9:
+            printf("*********************************\n");
+            printf("Testing UserList functionalities\n");
+            printf("*********************************\n");
+            break;
         default: {
             printf("\nUndefined description\n");
             break;
@@ -70,6 +75,13 @@ void printDeletedMessage(enum DelMess DeletedMessage) {
             printf("!!!!!\n");
             break;
         }
+        case USER_LIST: {
+            printf("!!!!!");
+            printf("UserList deleted");
+            printf("!!!!!\n");
+            break;
+        }
+
         default:
             printf("Undefined description\n");
             break;

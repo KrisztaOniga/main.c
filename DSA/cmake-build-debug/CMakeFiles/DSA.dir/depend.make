@@ -6,16 +6,21 @@ CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj: \
  ../sapi_sales/headers/models/product.h \
  ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
+ ../shared/headers/errors.h \
+ ../shared/headers/messages.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/list/user_list.c
 CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj: \
  ../sapi_sales/headers/manager/lab2.h \
  ../sapi_sales/headers/manager/lab3.h \
  ../sapi_sales/headers/manager/lab5.h \
+ ../sapi_sales/headers/manager/lab8.h \
+ ../sapi_sales/headers/manager/lab9.h \
  ../sapi_sales/headers/manager/lab_manager.h \
  ../sapi_sales/headers/models/product.h \
  ../sapi_sales/headers/models/product_array.h \
  ../sapi_sales/headers/models/user.h \
+ ../sapi_sales/headers/queue/user_queue.h \
  ../sapi_sales/headers/stack/product_stack.h \
  ../shared/headers/messages.h \
  ../shared/headers/useful.h \
@@ -49,11 +54,19 @@ CMakeFiles/DSA.dir/sapi_sales/src/manager/lab8.c.obj: \
  ../sapi_sales/headers/queue/user_queue.h \
  ../shared/headers/useful.h \
  ../sapi_sales/src/manager/lab8.c
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.obj: \
+ ../sapi_sales/headers/list/user_list.h \
+ ../sapi_sales/headers/models/product.h \
+ ../sapi_sales/headers/models/product_array.h \
+ ../sapi_sales/headers/models/user.h \
+ ../shared/headers/useful.h \
+ ../sapi_sales/src/manager/lab9.c
 CMakeFiles/DSA.dir/sapi_sales/src/manager/lab_manager.c.obj: \
  ../sapi_sales/headers/manager/lab2.h \
  ../sapi_sales/headers/manager/lab3.h \
  ../sapi_sales/headers/manager/lab5.h \
  ../sapi_sales/headers/manager/lab8.h \
+ ../sapi_sales/headers/manager/lab9.h \
  ../sapi_sales/headers/manager/lab_manager.h \
  ../sapi_sales/headers/models/product.h \
  ../sapi_sales/headers/models/product_array.h \

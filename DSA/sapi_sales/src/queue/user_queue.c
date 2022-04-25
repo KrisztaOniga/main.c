@@ -69,13 +69,21 @@ void dequeue(UserQueue *userQueue) {
 }
 
 int findElementInQueue(UserQueue *userQueue, int userId) {
-    for (int i = userQueue->front; i < userQueue->rear; ++i) {
+    int i = userQueue->front;
+    while (1) {
         if (userQueue->users[i]->id == userId) {
             return i;
         }
+        if (i == userQueue->rear)
+            break;
+        if (i == userQueue->size - 1) {
+            i = 0;
+        } else
+            i++;
     }
-    return 0;
+    return -1;
 }
+
 int finElementInQueuebyUser(UserQueue * userQueue, User *user){
     for (int i = userQueue->front; i < userQueue->rear; ++i) {
         if(userQueue->users[i]->id == user->id &&

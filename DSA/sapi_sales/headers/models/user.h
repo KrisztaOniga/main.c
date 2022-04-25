@@ -54,7 +54,7 @@ char *getSpecialization(enum Specialization type);
 
 void createUser( User ** user);
 
-void setUsersData(
+User * setUsersData(
         User * user,
         char *name,
         enum UserType type,

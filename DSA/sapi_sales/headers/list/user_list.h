@@ -15,10 +15,11 @@ void createUserNode(UserNode** userNode, User* userValue);
 void printUserList(UserNode* userNode, char* destination);
 User* findElementInList(UserNode* userNode, int userId);
 void insertFirst(UserNode** userNode, User* userValue);
-void insertLast(UserNode** userNode, User* userValue);
+void insertLast(UserNode* userNode, User* userValue);
 
 User* removeFirst(UserNode** userNode);
 User* removeLast(UserNode* userNode);
 void deleteUserList(UserNode** userNode);
+void deleteUserNode(UserNode **userNode, User * userValue);
 
 #endif //MAIN_C_USER_LIST_H

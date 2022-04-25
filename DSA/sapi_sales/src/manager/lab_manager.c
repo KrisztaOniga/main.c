@@ -2,7 +2,6 @@
 // Created by Kriszta Oniga on 2/23/2022.
 //
 #include "lab_manager.h"
-#include "lab8.h"
 
 //Fuggvenyek definicioja
 void lab2(){
@@ -24,4 +23,10 @@ void lab8(){
     printDescriptionMessage(LAB8);
     testUserQueueFunctionalities();
 }
+
+void lab9(){
+    printDescriptionMessage(LAB9);
+    testUserListFunctionalities();
+}
+
 

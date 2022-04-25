@@ -60,7 +60,7 @@ void createUser(User **user) {
     createProductArray(&(*user)->myProducts, MAX_PRODUCTS);
 }
 
-void setUsersData(
+User * setUsersData(
         User * user,
         char *name,
         enum UserType type,
@@ -101,7 +101,7 @@ void printUser(User *user, char *destination) {
 
 void deleteUser(User **user){
     if(*user != NULL){
-        deleteProductArray(&(*user)->myProducts);
+        //deleteProductArray(&(*user)->myProducts);
         free(*user);
         *user = NULL;
         printDeletedMessage(USER);
