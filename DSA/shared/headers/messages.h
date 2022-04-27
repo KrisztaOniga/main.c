@@ -16,6 +16,7 @@ enum LabType {
     LAB6,
     LAB8,
     LAB9,
+    LAB10
 };
 enum DelMess {
     USER,

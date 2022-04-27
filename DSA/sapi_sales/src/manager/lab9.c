@@ -9,7 +9,7 @@ void testUserListFunctionalities(){
 
     int choice;
     while (1){
-        printf("1. \n\nCreate Operation\n");
+        printf("\n\n1. Create Operation\n");
         printf("2. InsertFirst Operation\n");
         printf("3. InsertLat Operation\n");
         printf("4. FindElement Operation\n");

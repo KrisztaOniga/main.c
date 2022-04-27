@@ -87,7 +87,7 @@ User *removeLast(UserNode *userNode) {
         current = current->next;
     }
      */
-    return userNode;
+    return userNode->userValue;
 }
 
 void deleteUserList(UserNode **userNode) {
