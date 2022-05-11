@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../sapi_sales/headers/hash/product_hash.h
+product.h
+../sapi_sales/headers/hash/product.h
+
 ../sapi_sales/headers/models/product.h
 sys/utime.h
 -
@@ -18,41 +22,13 @@ stdio.h
 time.h
 -
 
-../sapi_sales/headers/models/product_array.h
-product.h
-../sapi_sales/headers/models/product.h
-stdbool.h
--
-
-../sapi_sales/headers/models/user.h
-useful.h
-../sapi_sales/headers/models/useful.h
-product.h
-../sapi_sales/headers/models/product.h
-product_array.h
-../sapi_sales/headers/models/product_array.h
-
-../shared/headers/errors.h
-stdlib.h
--
-stdio.h
--
-
-../shared/headers/messages.h
-stdlib.h
--
-stdio.h
--
-
 ../shared/headers/useful.h
 
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user.c
-user.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/user.h
-messages.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/messages.h
-errors.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/errors.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab12.c
+product_hash.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/product_hash.h
+useful.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/useful.h
 product.h
-C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/models/product.h
+C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/product.h
 

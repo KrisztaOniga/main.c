@@ -4,7 +4,8 @@
 #include "messages.h"
 #include <stdio.h>
 #include <stdlib.h>
-void printDescriptionMessage(enum LabType messageType){
+
+void printDescriptionMessage(enum LabType messageType) {
     switch (messageType) {
         case LAB2:
             printf("**********************************************\n");
@@ -36,12 +37,20 @@ void printDescriptionMessage(enum LabType messageType){
             printf("Testing UserBST functionalities\n");
             printf("*********************************\n");
             break;
+        case LAB12:
+            printf("*********************************\n");
+            printf("Testing ProductHashTable functionalities\n");
+            printf("*********************************\n");
+            break;
+
+
         default: {
             printf("\nUndefined description\n");
             break;
         }
     }
 }
+
 void printDeletedMessage(enum DelMess DeletedMessage) {
     switch (DeletedMessage) {
         case PRODUCT: {

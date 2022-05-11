@@ -28,11 +28,26 @@ void printUserList(UserNode *userNode, char *destination) {
 User *findElementInList(UserNode *userNode, int userId) {
     UserNode *p = userNode;
     while (p != NULL) {
-        if (p->userValue->id == userId)
+        if (p->userValue->id == userId){
             return userNode->userValue;
+        }
         p = p->next;
     }
     return NULL;
+}
+
+int findElementInList2(UserNode * userNode, int userID){
+    int position = -1, index = 0;
+    UserNode * current = userNode;
+    while (current != NULL){
+        if(current->userValue->id == userID){
+            position = index;
+            return position;
+        }
+        index ++;
+        current = current->next;
+    }
+    return position;
 }
 
 void insertFirst(UserNode **userNode, User *userValue) {
@@ -44,12 +59,30 @@ void insertFirst(UserNode **userNode, User *userValue) {
 
 void insertLast(UserNode *userNode, User *userValue) {
     UserNode *newNode;
-    createUserNode(&newNode, userValue);
     UserNode *p = (userNode);
+
     while (p->next != NULL) {
         p = p->next;
     }
+    createUserNode(&newNode, userValue);
     p->next = newNode;
+}
+
+void insertLast2(UserNode **userNode, User *userValue){
+    if(*userNode == NULL){
+        createUserNode(userNode, userValue);
+        return;
+    }
+
+    UserNode *temp = *userNode;
+    UserNode *newUser;
+
+    while (temp->next != NULL){
+        temp = temp->next;
+    }
+    createUserNode(&newUser, userValue);
+    temp->next = newUser;
+
 }
 
 User *removeFirst(UserNode **userNode) {
@@ -63,6 +96,15 @@ User *removeFirst(UserNode **userNode) {
     free(*userNode);
     *userNode = next_node;
     return returnValue;
+}
+
+int removeFirst2(UserNode **userNode){
+    UserNode *temp = (*userNode);
+    (*userNode) = (*userNode)->next;
+    int deletedID = temp->userValue->id;
+    deleteUser(&temp->userValue);
+    free(temp);
+    return deletedID;
 }
 
 User *removeLast(UserNode *userNode) {
@@ -88,6 +130,29 @@ User *removeLast(UserNode *userNode) {
     }
      */
     return userNode->userValue;
+}
+int removeLast2(UserNode **userNode){
+    int deletedID = -1;
+    if(*userNode == NULL){
+        return deletedID;
+    }
+    if((*userNode)->next == NULL){
+        deletedID = (*userNode)->userValue->id;
+        deleteUser(&(*userNode)->userValue);
+        free(*userNode);
+        (*userNode) = NULL;
+        return deletedID;
+    }
+
+    UserNode *temp = *userNode;
+    while (temp->next != NULL){
+        temp = temp->next;
+    }
+    deletedID = temp->userValue->id;
+    deleteUser(&temp->userValue);
+    free(temp);
+    temp = NULL;
+    return deletedID;
 }
 
 void deleteUserList(UserNode **userNode) {

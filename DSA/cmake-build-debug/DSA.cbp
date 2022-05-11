@@ -34,6 +34,8 @@
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/binary_search_tree"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/binary_search_tree"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/hash"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/hash"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -62,6 +64,8 @@
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/binary_search_tree"/>
 					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/binary_search_tree"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/hash"/>
+					<Add directory="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/hash"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
@@ -97,10 +101,16 @@
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/binary_search_tree/user_bst.h">
 			<Option target="DSA"/>
 		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/hash/product_hash.h">
+			<Option target="DSA"/>
+		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/list/user_list.h">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab10.h">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab12.h">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/headers/manager/lab2.h">
@@ -142,6 +152,9 @@
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/binary_search_tree/user_bst.c">
 			<Option target="DSA"/>
 		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/hash/product_hash.c">
+			<Option target="DSA"/>
+		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/list/user_list.c">
 			<Option target="DSA"/>
 		</Unit>
@@ -149,6 +162,9 @@
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab10.c">
+			<Option target="DSA"/>
+		</Unit>
+		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab12.c">
 			<Option target="DSA"/>
 		</Unit>
 		<Unit filename="C:/Users/Kriszta Oniga/Desktop/ADATSZERKEZETEK/SapiSales/DSA/sapi_sales/src/manager/lab2.c">

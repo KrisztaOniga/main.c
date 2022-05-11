@@ -317,6 +317,34 @@ CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\manager\lab10.c" -o CMakeFiles\DSA.dir\sapi_sales\src\manager\lab10.c.s
 
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj: CMakeFiles/DSA.dir/flags.make
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj: CMakeFiles/DSA.dir/includes_C.rsp
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj: ../sapi_sales/src/manager/lab12.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DSA.dir\sapi_sales\src\manager\lab12.c.obj -c "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\manager\lab12.c"
+
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\manager\lab12.c" > CMakeFiles\DSA.dir\sapi_sales\src\manager\lab12.c.i
+
+CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\manager\lab12.c" -o CMakeFiles\DSA.dir\sapi_sales\src\manager\lab12.c.s
+
+CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj: CMakeFiles/DSA.dir/flags.make
+CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj: CMakeFiles/DSA.dir/includes_C.rsp
+CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj: ../sapi_sales/src/hash/product_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DSA.dir\sapi_sales\src\hash\product_hash.c.obj -c "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\hash\product_hash.c"
+
+CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\hash\product_hash.c" > CMakeFiles\DSA.dir\sapi_sales\src\hash\product_hash.c.i
+
+CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\sapi_sales\src\hash\product_hash.c" -o CMakeFiles\DSA.dir\sapi_sales\src\hash\product_hash.c.s
+
 # Object files for target DSA
 DSA_OBJECTS = \
 "CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj" \
@@ -336,7 +364,9 @@ DSA_OBJECTS = \
 "CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj" \
 "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.obj" \
 "CMakeFiles/DSA.dir/sapi_sales/src/binary_search_tree/user_bst.c.obj" \
-"CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.obj"
+"CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.obj" \
+"CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj" \
+"CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj"
 
 # External object files for target DSA
 DSA_EXTERNAL_OBJECTS =
@@ -359,11 +389,13 @@ DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj
 DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/manager/lab9.c.obj
 DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/binary_search_tree/user_bst.c.obj
 DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.obj
+DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj
+DSA.exe: CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj
 DSA.exe: CMakeFiles/DSA.dir/build.make
 DSA.exe: CMakeFiles/DSA.dir/linklibs.rsp
 DSA.exe: CMakeFiles/DSA.dir/objects1.rsp
 DSA.exe: CMakeFiles/DSA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable DSA.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kriszta Oniga\Desktop\ADATSZERKEZETEK\SapiSales\DSA\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable DSA.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DSA.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

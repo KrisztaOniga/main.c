@@ -51,7 +51,7 @@ void printProduct(Product *product, char* destination){
            "\n\t\t - ID: %i"
            "\n\t\t - TYPE: %s"
            "\n\t\t - AMOUNT: %u"
-           "\n\t\t - CREATION: %ld\n",
+           "\n\t\t - CREATION: %lld\n",
            product->name,
            product->id,
            getProductType(product->type),

@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DSA.dir/sapi_sales/src/binary_search_tree/user_bst.c.obj"
+  "CMakeFiles/DSA.dir/sapi_sales/src/hash/product_hash.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/list/user_list.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/main.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab10.c.obj"
+  "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab12.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab2.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab3.c.obj"
   "CMakeFiles/DSA.dir/sapi_sales/src/manager/lab5.c.obj"

@@ -9,6 +9,7 @@ int main() {
     //lab5();
     //lab8();
     //lab9();
-    lab10();
+    //lab10();
+    lab12();
     return 0;
 }

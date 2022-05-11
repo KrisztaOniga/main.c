@@ -34,4 +34,10 @@ void lab10(){
     testUserBSTFunctionalities();
 }
 
+void lab12(){
+    printDescriptionMessage(LAB12);
+    testProductHashTableFunctionalities();
+}
+
+
 
